@@ -25,7 +25,7 @@ public enum PayEnum {
 
     private int money;
 
-    private PayEnum(int money){
+    PayEnum(int money){
         this.money = money;
     }
 
