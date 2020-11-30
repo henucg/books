@@ -50,7 +50,15 @@
     + 深拷贝
     + 浅拷贝 
 + 中介者模式
-    + 
+    + 中介者承担与各个模块对接的责任：
+    class Sale{}
+    class Stock{}
+    class Purchase{}
+    class Mediator{
+        Sale sale;
+        Stock stock;
+        Purchase purchase;
+    }
 + 命令模式
                     
 + 策略模式
