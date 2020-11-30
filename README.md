@@ -51,15 +51,23 @@
     + 浅拷贝 
 + 中介者模式
     + 中介者承担与各个模块对接的责任：
-    class Sale{}
-    class Stock{}
-    class Purchase{}
-    class Mediator{
-        Sale sale;
-        Stock stock;
-        Purchase purchase;
+    class Sale{} 
+    class Stock{} 
+    class Purchase{} 
+    class Mediator{ 
+        Sale sale; 
+        Stock stock; 
+        Purchase purchase; 
     }
 + 命令模式
+    + 产品、开发、测试每个角色会对应相同的功能，例如：增加需求
+    + 抽象角色
+    + 抽象命令实现
+    + 具体命令的实现类里面调用角色的实现
+
++ 责任链模式
+    + 初始化责任链：需要执行的子类方法添加到责任链（可以理解为一个队列）
+    + 执行责任链：遍历队列执行
                     
 + 策略模式
     + 不同的策略实现者的调用，由策略执行者执行，策略执行者的调度参数为策略的抽象接口，策略模式是里氏替换原
